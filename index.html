@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        
+        <div class="datetime">
+            <div id="currentDate"></div>
+            <div id="currentTime"></div>
+        </div>
+
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Enter a new task..." maxlength="50">
+            <button id="addBtn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <select id="itemsPerPage">
+                <option value="3">3 per page</option>
+                <option value="5" selected>5 per page</option>
+                <option value="10">10 per page</option>
+            </select>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextBtn" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
